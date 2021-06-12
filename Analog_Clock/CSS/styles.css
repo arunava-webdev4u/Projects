@@ -8,30 +8,11 @@ h1{
     font-family: 'Comfortaa', cursive;
     font-size: 3em;
 }
-
 header{
     margin-bottom: 3.5%;
 }
 
-#clock{
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
-    height: auto;
-}
-
-#clockImg{
-    width: 100%;
-    height: auto;
-}
-
-
-/* mobile screen with width 1080px and below*/
-@media screen and (max-width: 1080px){
-    h1{
-        font-size: 5em;
-    }
-    #clock{
-        width: 95%;
-    }
+#canvas{
+    border: solid 5px black;
+    margin: auto;
 }
