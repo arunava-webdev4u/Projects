@@ -6,56 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 
     <title>Calculator</title>
 </head>
 
 <body>
-    <!-- <header>
-        <h1>Calculator Neumorphic Design</h1>
-    </header> -->
-    <main class="container">
-        <div id="calculator">
-            <input type="text" name="output" id="screen">
-
-            <table>
-                <tr>
-                    <td><button>7</button></td>
-                    <td><button>8</button></td>
-                    <td><button>9</button></td>
-                    <td><button class="btn_symbol">+</button></td>
-                </tr>
-                <tr>
-                    <td><button>4</button></td>
-                    <td><button>5</button></td>
-                    <td><button>6</button></td>
-                    <td><button class="btn_symbol">-</button></td>
-                </tr>
-                <tr>
-                    <td><button>1</button></td>
-                    <td><button>2</button></td>
-                    <td><button>3</button></td>
-                    <td><button class="btn_symbol">x</button></td>
-                </tr>
-                <tr>
-                    <td><button>0</button></td>
-                    <td><button class="btn_symbol_reset">C</button></td>
-                    <td><button class="btn_symbol">=</button></td>
-                    <td><button class="btn_symbol">/</button></td>
-                </tr>
-            </table>
+    <section>
+        <div class="calculator">
+            <div class="display">
+                <div class="display-top">0</div>
+                <div class="display-main text-red">0</div>
+                <div class="display-temp-result">0</div>
+            </div>
+            <div class="all-buttons">
+                <div class="button text-red all-clear">C</div>
+                <div class="button text-red last-entity-clear">CE</div>
+                <div class="button text-red operation">%</div>
+                <div class="button text-red operation">/</div>
+                <!-- ---------------------------- -->
+                <div class="button number">7</div>
+                <div class="button number">8</div>
+                <div class="button number">9</div>
+                <div class="button text-red operation">x</div>
+                <!-- ---------------------------- -->
+                <div class="button number">4</div>
+                <div class="button number">5</div>
+                <div class="button number">6</div>
+                <div class="button text-red operation">-</div>
+                <!-- ---------------------------- -->
+                <div class="button number">1</div>
+                <div class="button number">2</div>
+                <div class="button number">3</div>
+                <div class="button text-red operation">+</div>
+                <!-- ---------------------------- -->
+                <div class="button number btn-0">0</div>
+                <div class="button number dot">.</div>
+                <div class="button text-red equal">=</div>
+            </div>
         </div>
-        <audio id="clk">
-            <source src="Audio/click_sound.mp3" type="audio/mp3">
-            Your browser does not support this audio
-        </audio>
-    </main>
-
+    </section>
+    <!-- <audio id="clk">
+        <source src="Audio/click_sound.mp3" type="audio/mp3">
+    </audio> -->
     <script src="JS/scripts.js"></script>
 </body>
 </html>
