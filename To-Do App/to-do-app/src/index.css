@@ -1,22 +1,14 @@
-/* @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"; */
-
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 body{
-    background-color: rgb(185, 185, 185);
+    background-color: #e9e9e9;
     margin: 0;
-    border: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-size: 28px; */
+    /* font-family:; */
 }

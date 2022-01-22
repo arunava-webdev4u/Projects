@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import ListItem from './ListItem';
+import FlipMove from 'react-flip-move';
+import '../CSS/MainBox.css'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faPlusCircle} from "@fortawesome/free-solid-svg-icons"
 
 export class Main extends Component {
     constructor(props) {
@@ -14,9 +18,9 @@ export class Main extends Component {
         }
     }
 
-    // handleSubmit = (event) => {
-    //     event.preventDefault()
-    // }
+    handleSubmit = (event) => {
+        event.preventDefault()
+    }
     
     handleInput = (event) => {
         this.setState({
@@ -27,8 +31,16 @@ export class Main extends Component {
         })
     }
 
+    handleEdit = (newValue, key) => {
+        const newList = this.state.List
+        newList.map(item => {
+            if (item.key === key)
+                item.input = newValue
+        })
+        this.setState({ List: newList })
+    }
+
     addTask = (event) => {
-        event.preventDefault()
         const newTask = this.state.currentItem;
         if (newTask.input !== "") {
             const newList = [...this.state.List, newTask];
@@ -40,7 +52,6 @@ export class Main extends Component {
                 }
             })
         }
-        console.log(event)
     }
 
     deleteItem = (key) => {
@@ -55,14 +66,18 @@ export class Main extends Component {
             <main>
                 <div className="box">
                     <div className='form-div'>
-                        <form className='form'>
-                            <input type='text' value={this.state.input} onChange={this.handleInput} placeholder='Enter text...' />
-                            <button type='submit' onClick={this.addTask}>+add</button>
+                        <form className='form' onSubmit={this.handleSubmit}>
+                            <input className='form-input' type='text' value={this.state.currentItem.input} onChange={this.handleInput} placeholder='Enter text...' />
+                            <button className='form-submit-button' type='submit' onClick={this.addTask}>+</button>
                         </form>
                     </div>
-                    <div className='body-div'>
-                        <ListItem list={this.state.List} deleteItem={this.deleteItem}/>
-                    </div>
+                    <FlipMove duration={500} enterAnimation="elevator" leaveAnimation="elevator">
+                    {(this.state.List.length !== 0)?
+                        <div className='body-div'>
+                                <ListItem list={this.state.List} deleteItem={this.deleteItem} handleEdit={this.handleEdit}/>
+                        </div> : null
+                    }
+                    </FlipMove>
                 </div>
             </main>
         )
@@ -70,3 +85,4 @@ export class Main extends Component {
 }
 
 export default Main;
+{/* <FontAwesomeIcon icon={faPlusCircle} /> */}
