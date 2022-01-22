@@ -1,0 +1,48 @@
+header, footer {
+    background-color: aqua;
+    /* height: 7vh; */
+    /* max-height: 50px; */
+}
+header {
+    height: 10vh;
+}
+footer {
+    height: 5vh;
+}
+main {
+    width: 100%;
+}
+
+.box {
+    height: 85vh;
+    /* width: 400px; */
+    border: solid 5px ;
+    margin: 0 auto;
+
+    background-color: aliceblue;
+}
+
+.box {
+    width: 30%;
+    min-width: 400px;
+}
+.body-div {
+    border: solid 5px red;
+    padding: 3px;
+}
+
+.listItemBox {
+    border: solid 2px green;
+    margin-bottom: 2px;
+}
+.listItem {
+    width: 90%;
+    display: inline-block;
+    
+}
+.deleteIcon {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
