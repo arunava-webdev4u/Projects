@@ -35,13 +35,15 @@
     width: 40px;
     box-shadow: -5px -5px 9px rgb(255, 255, 255), 5px 5px 9px rgba(0, 0, 0, 0.3);
 	background: none;
-	/* color: inherit; */
+    color: rgb(107, 107, 107);
     margin: 0;
 	border: none;
     border-radius: 50px;
 	cursor: pointer;
 }
-
+.form-submit-button:hover {
+    color: rgb(0, 0, 0);
+}
 
 
 
