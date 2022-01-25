@@ -5,4 +5,4 @@ Analog_Clock : https://arunava-webdev4u.github.io/Projects/Analog_Clock/index.ht
 
 Calculator : https://arunava-webdev4u.github.io/Projects/Calculator/index.html
 
-To-Do-React-App : https://arunava-webdev4u.github.io/Projects/to-do-app
+To-Do-React-App : https://arunava-webdev4u.github.io/to-do-app/
